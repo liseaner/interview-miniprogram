@@ -45,7 +45,7 @@
   </view>
 </view>
 <view class="grid-container">
-  <view class="grid" wx:for="{{features}}" wx:key="item.id" bindtap="showMore" data-id="{{item.id}}">
+  <view class="grid" wx:for="{{features}}" wx:key="id" bindtap="showMore" data-id="{{item.id}}">
     <view class="grid-content">
       <image src="{{item.image_src}}" width="110rpx" height="110rpx"></image>
     </view>
