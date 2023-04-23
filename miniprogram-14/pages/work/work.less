@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  height: 120rpx;
+  background-color: #272a3b;
+
+  .news {
+    position: relative;
+    text-align: center;
+    line-height: 120rpx;
+    color: #88bf01;
+    font-size: 36rpx;
+
+    image {
+      width: 50rpx;
+      height: 50rpx;
+      position: absolute;
+      right: 50rpx;
+      top: 35rpx;
+
+    }
+  }
+
+  .my-swipe {
+    width: 750rpx;
+    height: 340rpx;
+    .class-notes image{
+      width: 100%;
+    }
+
+    // wxss
+   
+  }
+   // 小圆点外层view
+   .dots {
+    position: relative;
+    top: -20rpx;
+    display: flex;
+    flex-direction: row;
+    // margin-bottom: 32rpx;
+    justify-content: center;
+
+    // 未选中的小圆点
+    .dot {
+      width: 10rpx;
+      height: 10rpx;
+      border-radius: 50%;
+      border: 2rpx #88bf01 solid;
+      background-color: #FFFFFF;
+      margin: 0 10rpx;
+    }
+
+    // 选中的小圆点
+    .active {
+      width: 10rpx;
+      height: 10rpx;
+      border-radius: 50%;
+      background-color: #88bf01;
+    }
+  }
+  .feature{
+    display: flex;
+    margin-top: -14rpx;
+    .feature1{
+      flex:1;
+      // padding: 20rpx 0rpx;
+      // width: calc(100% - );
+      background-color: #272a3b;
+      // &:nth-child(even){
+      //   background-color:pink;
+      // }
+      // &:nth-child(odd){
+      //   background-color: skyblue;
+      // }
+     .content{
+      .picture{
+        width: 80rpx;
+        height:80rpx;
+        margin: 20rpx auto;
+        background-color: pink;
+      }
+      .msg{
+        text-align: center;
+        color: #51535e;
+        font-size: 24rpx;
+        margin:-10rpx 0 10rpx;
+      }
+     }
+    }
+  }
+
+}

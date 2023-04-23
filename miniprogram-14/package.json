@@ -1,0 +1,17 @@
+{
+  "name": "miniprogram-14",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "@vant/weapp": "^1.10.16",
+    "miniprogram-sm-crypto": "^0.3.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

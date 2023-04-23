@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/work/work",
+        "pages/help/help",
+        "pages/common/common",
+        "pages/analyse/analyse",
+        "pages/mine/mine"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeiXin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#999",
+        "selectedColor": "#88bf01",
+        "backgroundColor": "#fafafa",
+        "list": [
+            {
+                "pagePath": "pages/work/work",
+                "text": "工作"
+            },
+            {
+                "pagePath": "pages/help/help",
+                "text": "助手"
+               
+            },
+            {
+                "pagePath": "pages/common/common",
+                "text": "常用"
+            },
+            {
+                "pagePath": "pages/analyse/analyse",
+                "text": "分析"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
+}

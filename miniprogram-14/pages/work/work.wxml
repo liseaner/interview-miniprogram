@@ -1,0 +1,67 @@
+<view class="header">
+  <view class="news">早上好！张三先生 
+  <image class="new" src="/icons/news1.png">
+  </image>
+  <view class="circle-news">77</view>
+  </view>
+  <swiper class="my-swipe" autoplay="true" current="{{currentSwiper}}" bindchange="swiperChange">
+    <block wx:for="{{imgSource}}" class='class-notes' wx:key="goods_id">
+      <swiper-item class='class-notes'>
+        <image src='{{item.image_src}}' style="height:300rpx" class='swiper_image' lazy-load='true' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots">
+    <block wx:for="{{imgSource}}" wx:key="goods_id">
+      <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
+    </block>
+  </view>
+  <view class="feature">
+    <view class="feature1">
+      <view class="picture">
+      </view>
+      <view class="msg"> 功能2</view>
+    </view>
+    <view class="feature1">
+      <view class="picture">
+      </view>
+      <view class="msg"> 功能2</view>
+    </view>
+    <view class="feature1">
+      <view class="picture">
+      </view>
+      <view class="msg"> 功能2</view>
+    </view>
+    <view class="feature1">
+      <view class="picture">
+      </view>
+      <view class="msg"> 功能2</view>
+    </view>
+    <view class="feature1">
+      <view class="picture">
+      </view>
+      <view class="msg"> 功能2</view>
+    </view>
+  </view>
+</view>
+<view class="grid-container">
+  <view class="grid" wx:for="{{features}}" wx:key="item.id" bindtap="showMore" data-id="{{item.id}}">
+    <view class="grid-content">
+      <image src="{{item.image_src}}" width="110rpx" height="110rpx"></image>
+    </view>
+    <view>{{item.text}}</view>
+  </view>
+</view>
+<view class="model-box" wx:if="{{isShow}}" bindtap="close">
+  <view class="showContent">
+    <view class="title">{{text}}</view>
+ <view class="grid-container2"> 
+  <view class="grid2"  wx:for="{{ImgSrc}}" wx:key="index">
+      <view class="grid-content">
+        <image src="{{item.image_src1}}" width="110rpx" height="110rpx"></image>
+      </view>
+      <view>{{item.text}}</view>
+    </view>
+ </view>
+  </view>
+</view>
